@@ -1,0 +1,71 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+}
+
+.video-container{
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+}
+
+video{
+    width: 100%;
+}
+
+.playlist{
+    margin-top: 20px;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+li{
+    cursor: pointer;
+    padding: 10px;
+    border: 3px solid blue;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+li:hover{
+    background-color: #ffffff;
+}
+
+.Toolbar{
+    background-color: white;
+    color: aquamarine;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttonGroup{
+    display: flex;
+}
+
+.effectType{
+    background-color: aquamarine;
+    color: #ffffff;
+    border: aquamarine;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.effectType:hover{
+    background-color: gray;
+}
+
+#progressBar{
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+}

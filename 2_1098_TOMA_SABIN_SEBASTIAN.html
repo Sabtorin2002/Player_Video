@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel ="stylesheet" href="2_1098_TOMA_SABIN_SEBASTIAN.css">
+    <title>Vikings</title>
+</head>
+<body>
+    <div class="video-container">
+        <video id="videoPlayer" class="videoSubtitrari" controls="controls">
+            <source src="media/corabii.mp4" type="video/mp4">
+            <source src="media/foc.mp4" type="video/mp4">
+            <source src="media/sculptura.mp4" type="video/mp4">
+            <source src="media/batalie.mp4" type="video/mp4">
+            <track label="English" kind="subtitles" src="media/1.json" srclang="en" default>
+            <track label="English" kind="subtitles" src="media/2.json" srclang="en">
+            <track label="English" kind="subtitles" src="media/3.json" srclang="en">
+            <track label="English" kind="subtitles" src="media/4.json" srclang="en">
+        </video>
+        <div id = "subtitleContainer"></div>
+        
+        
+        <div class="playlist">
+            <input type="file" id="fileInput" accept="video/*">
+            <button id="buttonModificare">Modificare</button>
+            <button id="buttonStergePrimul">Stergere primul video</button>
+            <button id="buttonStergeUltimul">Stergere ultimul video</button>
+            <ul>
+                <li onclick="playVideo('media/corabii.mp4')">Video 1</li>
+                <li onclick="playVideo('media/foc.mp4')">Video 2</li>
+                <li onclick="playVideo('media/sculptura.mp4')">Video 3</li>
+                <li onclick="playVideo('media/viking.mp4')">Video 4</li>
+            </ul>
+        </div>
+    </div>
+    <div class="Toolbar" role="toolbar">
+        <progress id="videoProgress"value="0" max="100" width="1500"></progress>
+        <div class="buttonGroup" role="group">
+            <button id="btnRotatie" type="button" class="effectType" data-effect="rotatie">Rotatie</button>
+        </div>
+    </div>
+    
+    <div id="previewContainer" style="display: none;">
+        <img id="previewImage" alt="Preview">
+    </div>
+    
+    
+    
+    <canvas id="canvasEffect" width="1500" height="1000"></canvas>
+    <canvas id="canvasPreview" width="100" height="100"></canvas>
+    
+    <script src="2_1098_TOMA_SABIN_SEBASTIAN.js">
+    </script>
+
+</body>
+</html>
+
+<!-- ul -> lista de elemente
+li -> element din lista -->
